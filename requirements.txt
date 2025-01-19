@@ -1,0 +1,11 @@
+Flask==2.1.1
+scikit-learn==1.0.2
+pandas 
+numpy 
+sklearn.preprocessing 
+pymongo 
+surprise 
+surprise.model_selection 
+surprise 
+flask 
+flask_cors 

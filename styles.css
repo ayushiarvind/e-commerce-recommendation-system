@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    background-image: url('background_image.avif'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Make body take full height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    flex-grow: 1; /* Allow content to grow and take available space */
+}
+
+h1 {
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.recommendations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendation {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.recommendation h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.recommendation p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;  /* Dark background */
+    color: white;
+    padding: 40px 0;
+    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Ensure padding on both sides */
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align sections to the left */
+}
+
+.footer .col-md-3 {
+    flex: 1;
+    padding: 10px;
+    max-width: 25%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    text-align: left; /* Left-align content within each column */
+}
+
+.footer .list-unstyled {
+    padding-left: 0;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.footer address {
+    font-style: normal;
+    text-align: left; /* Left-align the address */
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer .row.mt-3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer hr.bg-light {
+    border-color: #fff;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin-top: 10px;
+    text-align: center; /* Center-align the footer text */
+    font-size: 14px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .footer .col-md-3 {
+        max-width: 100%; /* Ensure columns stack on smaller screens */
+        padding: 20px 0;
+    }
+
+    .footer .row {
+        justify-content: center; /* Center items on small screens */
+    }
+}
